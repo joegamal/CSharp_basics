@@ -1,6 +1,7 @@
 using System;
 
-
+namespace CSharp_basics
+{
     public class datatypes
     {
         public static void Main()
@@ -38,3 +39,4 @@ using System;
 
         }
     }
+}
