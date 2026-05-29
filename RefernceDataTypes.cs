@@ -23,14 +23,14 @@ namespace CSharp_basics
             }
             Console.WriteLine("x is not accessible here");
 
-            A a = new A { x = 10 };
+            A a = new() { x = 10 };
 
-            A b = new A { x = 10 };
+            A b = new() { x = 10 };
 
             bool res = a == b;
 
-            Console.WriteLine(res);
-            Console.WriteLine(a.Equals(b));
+            Console.WriteLine(res); //false
+            Console.WriteLine(a.Equals(b)); //false
 
         }
 
