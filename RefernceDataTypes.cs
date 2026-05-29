@@ -2,7 +2,7 @@
 
 namespace CSharp_basics
 {
-    public class ReferenceDataTypes
+    public static class ReferenceDataTypes
     {
         /// <summary>
         /// these are all reference types in C#
@@ -22,6 +22,21 @@ namespace CSharp_basics
                 int x = 10;
             }
             Console.WriteLine("x is not accessible here");
+
+            A a = new A { x = 10 };
+
+            A b = new A { x = 10 };
+
+            bool res = a == b;
+
+            Console.WriteLine(res);
+            Console.WriteLine(a.Equals(b));
+
+        }
+
+        class A
+        {
+            public int x;
         }
     }
 }
